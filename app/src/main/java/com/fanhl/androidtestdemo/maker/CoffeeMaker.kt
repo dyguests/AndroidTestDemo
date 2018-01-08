@@ -9,4 +9,3 @@ package com.fanhl.androidtestdemo.maker
 open class CoffeeMaker {
     open fun make() = "Coffee"
 }
-
