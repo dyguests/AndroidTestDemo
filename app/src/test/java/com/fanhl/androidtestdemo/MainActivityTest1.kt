@@ -9,7 +9,7 @@ import org.junit.Test
  *
  * @author fanhl
  */
-class MainActivityTest {
+class MainActivityTest1 {
     @Test
     fun priceFormat_test() {
         val testClass = MainActivity()
