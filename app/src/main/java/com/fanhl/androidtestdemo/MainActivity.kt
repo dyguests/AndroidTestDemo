@@ -32,4 +32,9 @@ class MainActivity : AppCompatActivity() {
             price
         }
     }
+
+    /**
+     * 返回1
+     */
+    fun getX() = 1
 }
