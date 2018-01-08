@@ -14,6 +14,7 @@ class MainActivityTest {
     fun priceFormat_test() {
         val testClass = MainActivity()
 
+        Assert.assertEquals("1", testClass.priceFormat("1"))
         Assert.assertEquals("1.1", testClass.priceFormat("1.14"))
     }
 }
