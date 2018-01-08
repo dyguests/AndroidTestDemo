@@ -7,5 +7,6 @@ package com.fanhl.androidtestdemo.maker
  * @author fanhl
  */
 open class CoffeeMaker {
-   open fun make() = "Coffee"
+    open fun make() = "Coffee"
 }
+
