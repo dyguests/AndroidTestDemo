@@ -6,6 +6,9 @@ class Bike {
     fun run() = "${track()} run ${track()}"
 
     fun call() = Call().call()
+
+    lateinit var call: Call
+    fun call2() = call.call()
 }
 
 class Call {
