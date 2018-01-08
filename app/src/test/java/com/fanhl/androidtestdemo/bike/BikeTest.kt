@@ -3,15 +3,22 @@ package com.fanhl.androidtestdemo.bike
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.junit.Assert.assertEquals
+import org.junit.Before
 import org.junit.Test
 
 class BikeTest {
+    lateinit var testClass: Bike
+
+    @Before
+    fun setup() {
+        testClass = mock {
+            on { track() } doReturn "==="
+            on { run() }.thenCallRealMethod()
+        }
+    }
+
     @Test
     fun run_test() {
-        val testClass = mock<Bike> {
-            on { track() } doReturn "==="
-        }
-
-        assertEquals("===", testClass.track())
+        assertEquals("=== run ===", testClass.run())
     }
 }
