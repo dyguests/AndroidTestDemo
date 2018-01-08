@@ -8,10 +8,10 @@ import org.junit.Test
 class BikeTest {
     @Test
     fun run_test() {
-        val mock = mock<Bike> {
+        val testClass = mock<Bike> {
             on { track() } doReturn "==="
         }
 
-        assertEquals("=== run!!! ===", mock.run())
+        assertEquals("=== run!!! ===", testClass.run())
     }
 }
