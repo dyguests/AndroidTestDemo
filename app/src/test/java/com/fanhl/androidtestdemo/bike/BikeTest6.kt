@@ -6,7 +6,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
-class BikeTest {
+class BikeTest6 {
     lateinit var testClass: Bike
 
     @Before
