@@ -12,6 +12,6 @@ class BikeTest {
             on { track() } doReturn "==="
         }
 
-        assertEquals("=== run!!! ===", testClass.run())
+        assertEquals("===", testClass.track())
     }
 }
