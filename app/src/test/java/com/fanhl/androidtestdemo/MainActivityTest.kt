@@ -11,7 +11,7 @@ import org.junit.Test
  */
 class MainActivityTest {
     @Test
-    fun priceFormat() {
+    fun priceFormat_test() {
         val testClass = MainActivity()
 
         Assert.assertEquals("1.1", testClass.priceFormat("1.14"))
