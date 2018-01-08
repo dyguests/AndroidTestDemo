@@ -28,4 +28,13 @@ class MainActivityTest3 {
     fun getX_test() {
         Assert.assertEquals(1, testClass.getX())
     }
+
+    @Test
+    fun parseString_test() {
+        val method = testClass.javaClass.getDeclaredMethod("parseString", Int::class.java)
+        method.isAccessible = true
+        val actual = method.invoke(testClass, 1) as String?
+
+        Assert.assertEquals("1", actual)
+    }
 }

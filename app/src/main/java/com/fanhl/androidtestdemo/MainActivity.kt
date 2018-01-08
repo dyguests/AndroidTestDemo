@@ -37,4 +37,9 @@ class MainActivity : AppCompatActivity() {
      * 返回1
      */
     fun getX() = 1
+
+    /**
+     * 转换成字符串
+     */
+    private fun parseString(i: Int) = "$i"
 }
