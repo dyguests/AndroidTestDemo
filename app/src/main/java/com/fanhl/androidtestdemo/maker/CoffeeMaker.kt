@@ -6,10 +6,6 @@ package com.fanhl.androidtestdemo.maker
  *
  * @author fanhl
  */
-class CoffeeMaker private constructor() {
-    fun make() = "Coffee"
-
-    companion object {
-        fun newInstance() = CoffeeMaker()
-    }
+open class CoffeeMaker {
+   open fun make() = "Coffee"
 }

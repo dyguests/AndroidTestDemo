@@ -3,7 +3,6 @@ package com.fanhl.androidtestdemo.maker
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mockito
 
 /**
  * desc:
@@ -16,14 +15,11 @@ class CoffeeMakerTest4 {
 
     @Before
     fun setup() {
-        testClass = Mockito.mock(CoffeeMaker::class.java)
+        testClass = CoffeeMaker()
     }
 
     @Test
     fun make_test() {
-//        val testClass = CoffeeMaker()
-
-
         assertEquals("Coffee", testClass.make())
     }
 }
